@@ -1,0 +1,75 @@
+/* Custom CSS for Portfolio */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d1117; /* Dark background */
+    color: #c9d1d9; /* Light text color */
+}
+
+.portfolio-card {
+    /* Subtle animation on load */
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    transform: translateY(0);
+}
+
+.portfolio-card:hover {
+    transform: translateY(-2px); /* Lift slightly on hover */
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+}
+
+.section-header {
+    border-left: 4px solid #38bdf8; /* Sky blue accent */
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    color: #f0f6fc;
+}
+
+.tab-button {
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+    border-bottom-width: 2px;
+    outline: none;
+    background-color: transparent;
+}
+
+.tab-button.active {
+    border-color: #38bdf8; /* Sky blue underline */
+    color: #38bdf8; /* Active text color */
+}
+
+.tab-button:not(.active) {
+    border-color: transparent;
+    color: #9ca3af; /* Gray text color */
+}
+
+.tab-button:hover:not(.active) {
+    color: #38bdf8;
+    border-color: #38bdf8;
+}
+
+.tab-content {
+    padding-top: 1rem;
+}
+
+/* Custom styles for Skill Badges */
+.skill-badge {
+    display: inline-block;
+    padding: 0.4rem 0.75rem;
+    border-radius: 9999px; /* Fully rounded */
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    background-color: rgba(56, 189, 248, 0.2); /* Light blue tint */
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+    transition: background-color 0.2s;
+}
+
+.skill-badge:hover {
+    background-color: rgba(56, 189, 248, 0.4);
+}
+
+/* For tab content display */
+.hidden {
+    display: none;
+}
