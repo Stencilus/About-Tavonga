@@ -8,163 +8,524 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Use Inter Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- External CSS -->
+    <!-- Link to external CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gradient-to-br from-gray-900 to-black text-gray-100 p-4 md:p-10 min-h-screen">
+<body class="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-gray-100 p-4 md:p-10 min-h-screen">
 
     <div class="max-w-6xl mx-auto bg-gradient-to-br from-gray-800 to-gray-900 shadow-2xl rounded-2xl p-6 md:p-10 lg:p-12 border border-blue-500/20 portfolio-card">
         
         <!-- Header Section -->
         <header class="text-center pb-8 border-b border-blue-500/30 mb-8 relative">
+            <!-- Animated background effect -->
             <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500/10 to-teal-500/10 rounded-t-2xl opacity-30"></div>
             
+            <!-- Profile Picture -->
             <div class="relative z-10">
-                <img src="dube.jpg.jpg" alt="Tavonga Dube" class="rounded-full w-40 h-40 mx-auto mb-6 border-4 border-teal-400 object-cover shadow-2xl animate-float">
+                <img src="dube.jpg.jpg" 
+                     alt="Tavonga Stencilus Dube Profile Picture" 
+                     class="rounded-full w-40 h-40 mx-auto mb-6 border-4 border-teal-400 object-cover shadow-2xl hover:scale-105 transition-transform duration-300 animate-float">
+                
                 <h1 class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text text-transparent animate-slide-down">
                     Tavonga Stencilus Dube
                 </h1>
-                
-                <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade-in" style="animation-delay: 0.2s;">
-                    <span class="text-blue-200 font-medium text-lg px-2 border-r border-gray-600 last:border-0">AI Student</span>
-                    <span class="text-teal-300 font-medium text-lg px-2 border-r border-gray-600 last:border-0">Machine Learning</span>
-                    <span class="text-blue-200 font-medium text-lg px-2 border-r border-gray-600 last:border-0">Deep Learning, Data Science & Big Data</span>
-                    <span class="text-teal-300 font-medium text-lg px-2 border-r border-gray-600 last:border-0">IoT Enthusiast</span>
-                    <span class="text-blue-200 font-medium text-lg px-2">Mathematician</span>
-                </div>
+                <p class="mt-2 text-xl font-medium text-blue-200">BSc Artificial Intelligence Student | Africa University</p>
+                <p class="mt-1 text-lg text-teal-300 font-semibold">AI Student | Machine Learning | Deep Learning, Data Science & Big Data | IoT Enthusiast | Mathematician</p>
                 
                 <div class="mt-6 flex justify-center space-x-6">
-                    <a href="https://github.com/Stencilus" target="_blank" class="social-icon bg-gray-800 p-3 rounded-full">
+                    <!-- GitHub -->
+                    <a href="https://github.com/Stencilus" target="_blank" 
+                       class="social-icon bg-gray-800 hover:bg-gray-700 p-3 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/30">
                         <i class="fab fa-github text-2xl text-white"></i>
                     </a>
-                    <a href="https://linkedin.com/in/tavonga-stencilus-dube-2168442b3" target="_blank" class="social-icon bg-gray-800 p-3 rounded-full">
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/tavonga-stencilus-dube-2168442b3" target="_blank" 
+                       class="social-icon bg-gray-800 hover:bg-blue-700 p-3 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/30">
                         <i class="fab fa-linkedin-in text-2xl text-white"></i>
                     </a>
-                    <a href="mailto:tdube@africau.edu" class="social-icon bg-gray-800 p-3 rounded-full">
+                    <!-- Email -->
+                    <a href="mailto:tdube@africau.edu" 
+                       class="social-icon bg-gray-800 hover:bg-teal-600 p-3 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-teal-500/30">
                         <i class="fas fa-envelope text-2xl text-white"></i>
                     </a>
                 </div>
             </div>
         </header>
 
-        <!-- Profile Summary -->
+        <!-- About / Profile -->
         <section class="mb-12 animate-fade-in" style="animation-delay: 0.1s;">
             <h2 class="text-3xl font-bold mb-6 flex items-center text-blue-300">
-                <i class="fas fa-user-circle mr-3 text-teal-400"></i> Profile Summary
+                <i class="fas fa-user-circle mr-3 text-teal-400"></i>
+                About Me
             </h2>
-            <div class="bg-gray-800/50 p-6 rounded-xl border border-blue-500/20">
-                <p class="text-lg leading-relaxed text-gray-200">
-                    I am a highly passionate student currently pursuing a Bachelor of Science degree in Artificial Intelligence at Africa University. My core interest lies at the intersection of technology and finance, particularly focusing on <span class="text-teal-300 font-semibold">AI in Finance</span>. I possess a strong foundation in <span class="text-blue-300">Deep Learning</span>, <span class="text-blue-300">Machine Learning</span>, <span class="text-blue-300">Big Data</span>, and <span class="text-blue-300">IoT</span>.
-                </p>
-            </div>
-        </section>
-
-        <!-- Education & Skills (Grid) -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            <!-- Education -->
-            <section class="animate-fade-in" style="animation-delay: 0.2s;">
-                <h2 class="text-3xl font-bold mb-6 flex items-center text-blue-300"><i class="fas fa-graduation-cap mr-3 text-teal-400"></i> Education</h2>
-                <div class="bg-gray-800/50 p-6 rounded-xl border border-blue-500/20 hover:border-teal-400/40 transition-all duration-300">
-                    <div class="flex items-start">
-                        <div class="bg-teal-500/20 p-4 rounded-lg mr-4"><i class="fas fa-university text-2xl text-teal-400"></i></div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-teal-300 mb-2">BSc in Artificial Intelligence</h3>
-                            <p class="text-lg text-gray-300">Africa University</p>
-                            <p class="text-blue-300 text-sm mt-1">Currently Enrolled • GPA: 3.7/4.0</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Skills -->
-            <section class="animate-fade-in" style="animation-delay: 0.3s;">
-                <h2 class="text-3xl font-bold mb-6 flex items-center text-blue-300"><i class="fas fa-cogs mr-3 text-teal-400"></i> Skills</h2>
-                <div class="bg-gray-800/50 p-6 rounded-xl border border-blue-500/20">
-                    <div class="flex flex-wrap gap-3">
-                        <span class="skill-badge"><i class="fab fa-python mr-2"></i>Python</span>
-                        <span class="skill-badge"><i class="fas fa-copyright mr-2"></i>C#</span>
-                        <span class="skill-badge"><i class="fab fa-js-square mr-2"></i>JavaScript</span>
-                        <span class="skill-badge">TensorFlow</span>
-                        <span class="skill-badge">PyTorch</span>
-                        <span class="skill-badge">Big Data</span>
-                        <span class="skill-badge">IoT</span>
-                        <span class="skill-badge">Mathematics</span>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- PROJECTS SECTION -->
-        <section class="mb-12 animate-fade-in" style="animation-delay: 0.4s;">
-            <h2 class="text-3xl font-bold mb-6 flex items-center text-blue-300">
-                <i class="fas fa-project-diagram mr-3 text-teal-400"></i> Projects & Initiatives
-            </h2>
-            
-            <!-- Dynamic Project Container (No Tabs) -->
-            <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Projects will be injected here by JavaScript -->
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="mb-12 animate-fade-in" style="animation-delay: 0.5s;">
-            <h2 class="text-3xl font-bold mb-6 flex items-center text-blue-300">
-                <i class="fas fa-paper-plane mr-3 text-teal-400"></i> Get In Touch
-            </h2>
-            <div class="bg-gray-800/50 p-8 rounded-xl border border-blue-500/20">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Info -->
-                    <div>
-                         <p class="text-gray-300 mb-6">Have a project in mind or want to discuss AI in Finance? I'm always open to new opportunities.</p>
-                         <div class="space-y-4">
-                            <div class="contact-item flex items-center text-gray-300"><i class="fas fa-envelope w-8 text-teal-400"></i> tdube@africau.edu</div>
-                            <div class="contact-item flex items-center text-gray-300"><i class="fab fa-github w-8 text-blue-400"></i> github.com/Stencilus</div>
-                            <div class="contact-item flex items-center text-gray-300"><i class="fas fa-map-marker-alt w-8 text-green-400"></i> Zimbabwe</div>
-                         </div>
-                    </div>
-
-                    <!-- Interactive Form -->
-                    <form id="contact-form" class="space-y-4">
-                        <div>
-                            <input type="text" id="name" placeholder="Your Name" class="form-input" required>
-                        </div>
-                        <div>
-                            <input type="email" id="email" placeholder="Your Email" class="form-input" required>
-                        </div>
-                        <div>
-                            <textarea id="message" rows="4" placeholder="Your Message" class="form-input" required></textarea>
-                            <!-- Typing Indicator -->
-                            <div id="typing-indicator" class="typing-indicator">
-                                <i class="fas fa-pen-fancy animate-bounce mr-2"></i> Tavo is listening... (You are typing)
+            <div class="bg-gradient-to-r from-gray-800/50 to-gray-900/50 p-6 rounded-xl border border-blue-500/20 hover:border-teal-400/40 transition-all duration-300">
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <div class="lg:w-2/3">
+                        <p class="text-lg leading-relaxed text-gray-200 mb-6">
+                            I am a highly passionate student currently pursuing a Bachelor of Science degree in Artificial Intelligence at Africa University. My core interest lies at the intersection of technology and finance, particularly focusing on <span class="text-teal-300 font-semibold">AI in Finance</span>. I am driven to leverage data and advanced models to solve complex real-world challenges.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-gray-800/40 p-4 rounded-lg border border-teal-500/20">
+                                <h3 class="text-xl font-bold text-teal-300 mb-3 flex items-center">
+                                    <i class="fas fa-brain mr-2"></i>Expertise
+                                </h3>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center text-gray-300"><i class="fas fa-robot text-teal-400 mr-2"></i> Artificial Intelligence</li>
+                                    <li class="flex items-center text-gray-300"><i class="fas fa-chart-line text-blue-400 mr-2"></i> Machine Learning</li>
+                                    <li class="flex items-center text-gray-300"><i class="fas fa-project-diagram text-purple-400 mr-2"></i> Deep Learning</li>
+                                    <li class="flex items-center text-gray-300"><i class="fas fa-database text-green-400 mr-2"></i> Data Science & Big Data</li>
+                                    <li class="flex items-center text-gray-300"><i class="fas fa-satellite-dish text-orange-400 mr-2"></i> IoT Enthusiast</li>
+                                    <li class="flex items-center text-gray-300"><i class="fas fa-calculator text-red-400 mr-2"></i> Mathematics</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-gray-800/40 p-4 rounded-lg border border-blue-500/20">
+                                <h3 class="text-xl font-bold text-blue-300 mb-3 flex items-center">
+                                    <i class="fas fa-code mr-2"></i>Programming Languages
+                                </h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="skill-badge hover:bg-blue-500/30 hover:scale-105"><i class="fab fa-python mr-2"></i>Python</span>
+                                    <span class="skill-badge hover:bg-purple-500/30 hover:scale-105"><i class="fas fa-copyright mr-2"></i>C#</span>
+                                    <span class="skill-badge hover:bg-blue-700/30 hover:scale-105"><i class="fas fa-plus-plus mr-2"></i>C++</span>
+                                    <span class="skill-badge hover:bg-yellow-500/30 hover:scale-105"><i class="fab fa-js-square mr-2"></i>JavaScript</span>
+                                    <span class="skill-badge hover:bg-blue-400/30 hover:scale-105"><i class="fab fa-css3-alt mr-2"></i>CSS</span>
+                                    <span class="skill-badge hover:bg-red-500/30 hover:scale-105"><i class="fab fa-html5 mr-2"></i>HTML</span>
+                                </div>
                             </div>
                         </div>
-                        <button type="submit" id="submit-btn" class="submit-btn w-full">
-                            <span><i class="fas fa-paper-plane mr-2"></i>Send Message</span>
-                        </button>
-                    </form>
+                    </div>
+                    
+                    <div class="lg:w-1/3">
+                        <div class="bg-gradient-to-br from-teal-900/30 to-blue-900/30 p-6 rounded-xl border border-teal-500/30">
+                            <h3 class="text-xl font-bold text-teal-300 mb-4 flex items-center">
+                                <i class="fas fa-bullseye mr-2"></i>Research Focus
+                            </h3>
+                            <p class="text-gray-300 mb-4">
+                                My research focuses on applying AI and machine learning techniques to financial systems, predictive analytics, and developing intelligent solutions for real-world problems.
+                            </p>
+                            <div class="flex items-center text-sm text-blue-300">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span>Africa University, Zimbabwe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPLETED PROJECTS SECTION -->
+        <section class="mb-12 animate-fade-in" style="animation-delay: 0.2s;">
+            <h2 class="text-3xl font-bold mb-8 flex items-center text-teal-300">
+                <i class="fas fa-check-circle mr-3 text-teal-400"></i>
+                Completed Projects
+            </h2>
+            
+            <!-- Contact Tracing Project -->
+            <div class="mb-8 project-card bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-teal-500/30 hover:border-teal-400/60 transition-all duration-300 hover:shadow-2xl hover:shadow-teal-500/20">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h3 class="text-3xl font-bold text-teal-300 mb-2">AI-Based Contact Tracing Application</h3>
+                        <span class="bg-teal-500/20 text-teal-300 px-4 py-1 rounded-full text-sm font-semibold">Completed</span>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-blue-300"><i class="fas fa-calendar-alt mr-2"></i>2025</p>
+                        <p class="text-gray-400 text-sm">Team Project</p>
+                    </div>
+                </div>
+                
+                <!-- Project Summary -->
+                <div class="mb-8">
+                    <p class="text-lg leading-relaxed text-gray-200 mb-6">
+                        Reflecting on an inspiring journey in modern technology research! I'm thrilled to have contributed to a groundbreaking contact tracing project, where innovation meets real-world impact.
+                    </p>
+                    
+                    <div class="bg-gradient-to-r from-teal-900/20 to-blue-900/20 p-6 rounded-lg border-l-4 border-teal-500 mb-6">
+                        <p class="text-gray-200 mb-4">
+                            Big thanks to everyone involved in our contact tracing initiative – especially 
+                            <span class="text-teal-300 font-semibold">Mrs. Mafu, Danai Matibe, Anotidachangamire Tayerera, Kimberly Ngoya, Lesley Mutsambiwa, and Ridell Salema</span>.
+                        </p>
+                        <p class="text-gray-200">
+                            Your collaboration made this research in modern tech possible. Proud to have helped shape the conceptual framework alongside you.
+                        </p>
+                    </div>
+                    
+                    <p class="text-gray-300 italic mb-6">
+                        This project reinforced how collaboration can turn complex challenges into scalable solutions. Grateful to push boundaries with such talented minds! 🚀
+                    </p>
+                </div>
+                
+                <!-- Technologies Section -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-bold text-blue-300 mb-4 flex items-center">
+                        <i class="fas fa-cogs mr-2"></i>
+                        Technologies Integrated
+                    </h4>
+                    <p class="text-gray-300 mb-6">
+                        Together, we designed the conceptual framework integrating cutting-edge technologies:
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="tech-feature bg-gray-800/50 p-4 rounded-lg border border-teal-500/20">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-teal-500/20 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-bluetooth text-teal-300"></i>
+                                </div>
+                                <h5 class="text-lg font-semibold text-teal-300">BLE (Bluetooth Low Energy)</h5>
+                            </div>
+                            <p class="text-gray-300">For precise proximity detection between devices</p>
+                        </div>
+                        
+                        <div class="tech-feature bg-gray-800/50 p-4 rounded-lg border border-blue-500/20">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-satellite text-blue-300"></i>
+                                </div>
+                                <h5 class="text-lg font-semibold text-blue-300">GPS & 5G LTE</h5>
+                            </div>
+                            <p class="text-gray-300">For real-time location accuracy and robust communication</p>
+                        </div>
+                        
+                        <div class="tech-feature bg-gray-800/50 p-4 rounded-lg border border-purple-500/20">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-purple-500/20 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-broadcast-tower text-purple-300"></i>
+                                </div>
+                                <h5 class="text-lg font-semibold text-purple-300">UWB (Ultra-Wideband)</h5>
+                            </div>
+                            <p class="text-gray-300">For high-precision tracking capabilities</p>
+                        </div>
+                        
+                        <div class="tech-feature bg-gray-800/50 p-4 rounded-lg border border-green-500/20">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-link text-green-300"></i>
+                                </div>
+                                <h5 class="text-lg font-semibold text-green-300">Matter Protocol</h5>
+                            </div>
+                            <p class="text-gray-300">For seamless cross-device and cross-platform interoperability</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Outcome -->
+                <div class="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-xl border border-blue-500/30">
+                    <h4 class="text-xl font-bold text-blue-300 mb-4 flex items-center">
+                        <i class="fas fa-trophy mr-2"></i>
+                        Project Outcome
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <p class="text-gray-300 mb-2"><i class="fas fa-check text-green-400 mr-2"></i>Successfully designed conceptual framework</p>
+                            <p class="text-gray-300 mb-2"><i class="fas fa-check text-green-400 mr-2"></i>Integrated multiple cutting-edge technologies</p>
+                            <p class="text-gray-300"><i class="fas fa-check text-green-400 mr-2"></i>Proved collaboration yields innovative solutions</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-300 mb-2"><i class="fas fa-lightbulb text-yellow-400 mr-2"></i>Groundbreaking approach to contact tracing</p>
+                            <p class="text-gray-300 mb-2"><i class="fas fa-users text-teal-400 mr-2"></i>Team of 7 talented researchers</p>
+                            <p class="text-gray-300"><i class="fas fa-chart-line text-blue-400 mr-2"></i>Real-world impact potential</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UPCOMING PROJECTS SECTION -->
+        <section class="mb-12 animate-fade-in" style="animation-delay: 0.3s;">
+            <h2 class="text-3xl font-bold mb-8 flex items-center text-blue-300">
+                <i class="fas fa-rocket mr-3 text-blue-400"></i>
+                Upcoming Projects
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Campus Navigation System -->
+                <div class="project-card bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-blue-500/30 hover:border-blue-400/60 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-blue-300">Campus Navigation System</h3>
+                        <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-semibold">Upcoming</span>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <p class="text-gray-300 mb-4">
+                            Developing an intelligent indoor/outdoor navigation system for the university campus, leveraging IoT and spatial data analysis to provide real-time routing and point-of-interest discovery.
+                        </p>
+                        
+                        <div class="bg-gray-800/40 p-4 rounded-lg mb-4">
+                            <h4 class="text-lg font-semibold text-teal-300 mb-2">Key Features:</h4>
+                            <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                <li>Indoor navigation using IoT sensors</li>
+                                <li>Real-time location tracking</li>
+                                <li>Accessibility features for disabled students</li>
+                                <li>Event notifications and campus updates</li>
+                                <li>Point-of-interest discovery</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold text-blue-300 mb-3">Technologies to be Used:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag">IoT Sensors</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">WebSockets</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-4 border-t border-gray-700">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-sm text-gray-400"><i class="far fa-calendar mr-2"></i>Start: 2025</p>
+                                <p class="text-sm text-gray-400"><i class="fas fa-users mr-2"></i>Team: 3 members</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-blue-300"><i class="fas fa-clock mr-1"></i> Duration: 6 months</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smart Learning Hub -->
+                <div class="project-card bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-purple-500/30 hover:border-purple-400/60 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-purple-300">Smart Learning Hub</h3>
+                        <span class="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm font-semibold">Upcoming</span>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <p class="text-gray-300 mb-4">
+                            A personalized learning platform utilizing Machine Learning to adapt educational content, monitor student progress, and recommend resources based on individual learning styles and performance.
+                        </p>
+                        
+                        <div class="bg-gray-800/40 p-4 rounded-lg mb-4">
+                            <h4 class="text-lg font-semibold text-teal-300 mb-2">Key Features:</h4>
+                            <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                <li>Personalized learning paths</li>
+                                <li>Real-time progress tracking</li>
+                                <li>Adaptive content delivery</li>
+                                <li>Resource recommendations</li>
+                                <li>Collaborative learning tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold text-purple-300 mb-3">Technologies to be Used:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Recommendation Algorithms</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-4 border-t border-gray-700">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-sm text-gray-400"><i class="far fa-calendar mr-2"></i>Start: 2025</p>
+                                <p class="text-sm text-gray-400"><i class="fas fa-users mr-2"></i>Team: 3 members</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-purple-300"><i class="fas fa-clock mr-1"></i> Duration: 8 months</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-12 animate-fade-in" style="animation-delay: 0.4s;">
+            <h2 class="text-3xl font-bold mb-6 flex items-center text-blue-300">
+                <i class="fas fa-graduation-cap mr-3 text-teal-400"></i>
+                Education
+            </h2>
+            <div class="bg-gradient-to-r from-gray-800/50 to-gray-900/50 p-8 rounded-xl border border-blue-500/20 hover:border-teal-400/40 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 group">
+                <div class="flex flex-col md:flex-row items-start">
+                    <div class="bg-teal-500/20 p-6 rounded-lg mr-6 group-hover:bg-teal-500/30 transition-colors mb-6 md:mb-0">
+                        <i class="fas fa-university text-4xl text-teal-400"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-3xl font-bold text-teal-300 mb-2">Bachelor of Science in Artificial Intelligence</h3>
+                        <p class="text-xl text-gray-300 mb-1">Africa University, Zimbabwe</p>
+                        <p class="text-blue-300 font-medium text-lg mb-4"><i class="fas fa-calendar-alt mr-2"></i>Currently Enrolled</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                            <div class="bg-gray-800/40 p-4 rounded-lg">
+                                <h4 class="text-lg font-bold text-teal-300 mb-2">Specialization</h4>
+                                <p class="text-gray-300">AI in Finance & Machine Learning</p>
+                            </div>
+                            <div class="bg-gray-800/40 p-4 rounded-lg">
+                                <h4 class="text-lg font-bold text-blue-300 mb-2">Focus Areas</h4>
+                                <p class="text-gray-300">Deep Learning, Big Data Analytics, IoT Systems</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <h4 class="text-lg font-bold text-purple-300 mb-3">Relevant Coursework:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-badge hover:bg-blue-500/30">Machine Learning</span>
+                                <span class="skill-badge hover:bg-purple-500/30">Neural Networks</span>
+                                <span class="skill-badge hover:bg-green-500/30">Data Science</span>
+                                <span class="skill-badge hover:bg-red-500/30">Mathematics for AI</span>
+                                <span class="skill-badge hover:bg-yellow-500/30">IoT Systems</span>
+                                <span class="skill-badge hover:bg-teal-500/30">Big Data Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="mb-12 animate-fade-in" style="animation-delay: 0.5s;">
+            <h2 class="text-3xl font-bold mb-6 flex items-center text-blue-300">
+                <i class="fas fa-address-card mr-3 text-teal-400"></i>
+                Contact & Reach Out
+            </h2>
+            <div class="bg-gradient-to-r from-gray-800/50 to-gray-900/50 p-8 rounded-xl border border-blue-500/20 hover:border-teal-400/40 transition-all duration-300">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Contact Information -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-teal-300">Get in Touch</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="contact-item group">
+                                <div class="flex items-center">
+                                    <div class="contact-icon bg-gradient-to-r from-teal-500 to-teal-600 group-hover:from-teal-400 group-hover:to-teal-500">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-bold text-teal-300">Email</h4>
+                                        <a href="mailto:tdube@africau.edu" class="text-gray-300 hover:text-teal-300 transition-colors">tdube@africau.edu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item group">
+                                <div class="flex items-center">
+                                    <div class="contact-icon bg-gradient-to-r from-blue-500 to-blue-600 group-hover:from-blue-400 group-hover:to-blue-500">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-bold text-blue-300">GitHub</h4>
+                                        <a href="https://github.com/Stencilus" target="_blank" class="text-gray-300 hover:text-blue-300 transition-colors">github.com/Stencilus</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item group">
+                                <div class="flex items-center">
+                                    <div class="contact-icon bg-gradient-to-r from-purple-500 to-purple-600 group-hover:from-purple-400 group-hover:to-purple-500">
+                                        <i class="fab fa-linkedin"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-bold text-purple-300">LinkedIn</h4>
+                                        <a href="https://linkedin.com/in/tavonga-stencilus-dube-2168442b3" target="_blank" class="text-gray-300 hover:text-purple-300 transition-colors">Tavonga Stencilus Dube</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item group">
+                                <div class="flex items-center">
+                                    <div class="contact-icon bg-gradient-to-r from-green-500 to-green-600 group-hover:from-green-400 group-hover:to-green-500">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-bold text-green-300">Location</h4>
+                                        <p class="text-gray-300">Africa University, Zimbabwe</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="text-lg font-bold text-blue-300 mb-4">Availability</h4>
+                            <p class="text-gray-300 mb-2"><i class="far fa-clock text-teal-400 mr-2"></i>Open to research collaborations</p>
+                            <p class="text-gray-300 mb-2"><i class="fas fa-handshake text-blue-400 mr-2"></i>Interested in AI/ML projects</p>
+                            <p class="text-gray-300"><i class="fas fa-comments text-purple-400 mr-2"></i>Always happy to discuss technology</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-teal-300">Send Me a Message</h3>
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="name" class="block text-gray-300 mb-2">Your Name</label>
+                                    <input type="text" id="name" placeholder="Enter your name" class="form-input" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-300 mb-2">Your Email</label>
+                                    <input type="email" id="email" placeholder="Enter your email" class="form-input" required>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-gray-300 mb-2">Subject</label>
+                                <input type="text" id="subject" placeholder="What is this regarding?" class="form-input" required>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-300 mb-2">Message</label>
+                                <textarea id="message" placeholder="Your message here..." rows="5" class="form-input" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn w-full">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="mt-12 pt-8 border-t border-blue-500/30 text-center text-gray-500">
-            <p>&copy; 2025 Tavonga Stencilus Dube. Crafted with <i class="fas fa-heart text-red-400"></i></p>
+        <footer class="mt-12 pt-8 border-t border-blue-500/30 text-center">
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold mb-6 text-teal-300">Connect With Me</h3>
+                <div class="flex justify-center space-x-8">
+                    <a href="https://github.com/Stencilus" target="_blank" class="footer-icon hover:text-teal-300">
+                        <i class="fab fa-github text-4xl"></i>
+                        <p class="text-sm mt-2">GitHub</p>
+                    </a>
+                    <a href="https://linkedin.com/in/tavonga-stencilus-dube-2168442b3" target="_blank" class="footer-icon hover:text-blue-300">
+                        <i class="fab fa-linkedin text-4xl"></i>
+                        <p class="text-sm mt-2">LinkedIn</p>
+                    </a>
+                    <a href="mailto:tdube@africau.edu" class="footer-icon hover:text-green-300">
+                        <i class="fas fa-envelope text-4xl"></i>
+                        <p class="text-sm mt-2">Email</p>
+                    </a>
+                    <a href="#" class="footer-icon hover:text-purple-300">
+                        <i class="fas fa-file-pdf text-4xl"></i>
+                        <p class="text-sm mt-2">Resume</p>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-8">
+                <p class="text-gray-400">&copy; <span id="current-year">2025</span> Tavonga Stencilus Dube. All rights reserved.</p>
+                <p class="text-gray-500 text-sm mt-2">Portfolio crafted with passion using AI & Modern Web Technologies</p>
+                <p class="text-gray-600 text-xs mt-4">Last Updated: <span id="current-date"></span></p>
+            </div>
         </footer>
+
     </div>
 
-    <!-- Modal -->
-    <div id="project-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div id="modal-body"></div>
-        </div>
-    </div>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-    <!-- Scroll Top -->
-    <button id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
-
+    <!-- Link to external JavaScript -->
     <script src="js/script.js"></script>
 </body>
 </html>
