@@ -1,15 +1,13 @@
 // js/script.js
 
-// 1. DATA: Updated with new summaries and acknowledgments
+// 1. DATA: Reordered for sequential display (Contact Tracing First)
 const projectsData = [
-    // COMPLETED PROJECTS
+    // --- 1. Finished Projects ---
     {
         id: 'contact-tracing',
         category: 'done',
         title: 'AI-Based Contact Tracing',
-        // Short description for card
         description: 'A groundbreaking initiative integrating BLE, GPS, 5G LTE, UWB, and Matter for precise proximity detection, developed with an amazing team of researchers.',
-        // Detailed reflection for Modal
         longDescription: `
             <p class="mb-4">Reflecting on an inspiring journey in modern technology research! I’m thrilled to have contributed to a groundbreaking contact tracing project, where innovation meets real-world impact.</p>
             
@@ -39,7 +37,7 @@ const projectsData = [
         status: 'Completed',
         color: 'blue'
     },
-    // UPCOMING PROJECTS
+    // --- 2. Upcoming Projects ---
     {
         id: 'campus-connect',
         category: 'upcoming',
@@ -62,19 +60,14 @@ const projectsData = [
     }
 ];
 
-// 2. PROJECT RENDERING LOGIC
+// 2. PROJECT RENDERING LOGIC (Sequential Display)
 const projectsContainer = document.getElementById('projects-container');
 
-function renderProjects(filter = 'done') {
+function renderProjects() {
     projectsContainer.innerHTML = ''; // Clear current content
     
-    // Filter data based on tab selection
-    const filteredProjects = filter === 'all' 
-        ? projectsData 
-        : projectsData.filter(p => p.category === filter);
-
-    // Generate HTML for each project
-    filteredProjects.forEach(project => {
+    // Simply render all projects in the order defined in the array
+    projectsData.forEach(project => {
         const borderClass = project.category === 'done' ? 'border-teal-500/30' : 'border-purple-500/30';
         const titleColor = project.category === 'done' ? 'text-teal-300' : 'text-purple-300';
         const badgeColor = project.category === 'done' ? 'bg-teal-500/20 text-teal-300' : 'bg-purple-500/20 text-purple-300';
@@ -98,20 +91,6 @@ function renderProjects(filter = 'done') {
             </button>
         `;
         projectsContainer.appendChild(card);
-    });
-}
-
-// 3. TAB SWITCHING LOGIC
-function switchTab(tabName) {
-    renderProjects(tabName);
-    const buttons = ['btn-done', 'btn-upcoming', 'btn-all'];
-    buttons.forEach(btnId => {
-        const btn = document.getElementById(btnId);
-        if (btnId === `btn-${tabName}`) {
-            btn.className = "tab-button active bg-teal-600 text-white shadow-lg";
-        } else {
-            btn.className = "tab-button bg-gray-700 text-gray-300 shadow-lg hover:bg-gray-600";
-        }
     });
 }
 
@@ -173,7 +152,7 @@ function openModal(projectId) {
              ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
         </div>
     `;
-    modal.classList.add('active'); // Matches CSS .modal.active
+    modal.classList.add('active');
 }
 
 closeModal.addEventListener('click', () => modal.classList.remove('active'));
@@ -196,5 +175,5 @@ backToTopBtn.addEventListener('click', () => {
 
 // INITIALIZE
 document.addEventListener('DOMContentLoaded', () => {
-    renderProjects('done');
+    renderProjects(); // Call without arguments to show all
 });
